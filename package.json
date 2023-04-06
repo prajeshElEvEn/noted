@@ -1,0 +1,15 @@
+{
+  "name": "noted",
+  "version": "1.0.0",
+  "description": "Notes taking app",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend"
+  },
+  "author": "eleven",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
