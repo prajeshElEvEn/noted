@@ -10,6 +10,7 @@ import ExploreNotes from './pages/ExploreNotes';
 import CreateNote from './pages/CreateNote';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import UserDashboard from './pages/UserDashboard';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/profile" element={<CreateNote />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/dashboard" element={<UserDashboard />} />
       </Routes>
       <Footer />
     </>
