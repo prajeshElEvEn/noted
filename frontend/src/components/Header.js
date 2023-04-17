@@ -7,7 +7,11 @@ const Header = () => {
     return (
         <div className='nav-container'>
             <nav>
-                <div className="nav-left"></div>
+                <div className="nav-left">
+                    <Link to={'/'} className='nav-item'>
+                        Noted
+                    </Link>
+                </div>
                 <div className="nav-right">
                     <Link to={'/explore'} className='nav-item'>
                         Explore

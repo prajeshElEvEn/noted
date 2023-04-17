@@ -1,3 +1,5 @@
+@import 'variables/variables'
+
 .nav-container
     width: 100%
     nav
@@ -8,6 +10,12 @@
         justify-content: space-between
         padding: 1rem 0
         .nav-left
+            a
+                text-decoration: none
+                color: #000
+                font-family: $font-family-lobster
+                font-size: 2rem
+                font-weight: 400
         .nav-right
             display: flex
             align-items: center
@@ -16,7 +24,7 @@
                 text-decoration: none
                 color: #000
             .nav-btn-outline
-                border: 1px solid #000
+                border: 1px solid #dfdfdf
                 color: #000
                 border-radius: 10px
                 padding: 0.5rem 1rem
@@ -24,6 +32,9 @@
                 display: flex
                 align-items: center
                 gap: 0.5rem
+                transition: all 0.3s ease-in-out
+                &:hover
+                    background: #dfdfdf
             .nav-btn
                 color: #fff
                 background: #000
@@ -51,9 +62,12 @@
                 text-decoration: none
                 color: #000
                 font-weight: 600
-                // padding: 0.5rem 1rem
+                padding: 0.5rem 1rem
                 border-radius: 10px
                 display: flex
                 align-items: center
                 gap: 0.5rem
+                transition: all 0.3s ease-in-out
+                &:hover
+                    background: #dfdfdf
 
