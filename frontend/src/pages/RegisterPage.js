@@ -170,7 +170,9 @@ const RegisterPage = () => {
                         <div className='label'>
                             Already have an account? &nbsp;
                             <span>
-                                <Link to='/login'>Login</Link>
+                                <Link to='/login'>
+                                    Login
+                                </Link>
                             </span>
                         </div>
                     </div>
