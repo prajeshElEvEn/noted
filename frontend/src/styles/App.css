@@ -75,4 +75,10 @@
 }
 .footer-container .footer .footer-right a:hover {
   background: #dfdfdf;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0;
 }/*# sourceMappingURL=App.css.map */
