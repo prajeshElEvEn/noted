@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const UserDashboard = () => {
     return (
-        <div className='container'>UserDashboard</div>
+        <>
+            <Header />
+            <div className='container'>UserDashboard</div>
+        </>
     )
 }
 

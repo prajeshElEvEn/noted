@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const ProfilePage = () => {
     return (
-        <div className='container'>ProfilePage</div>
+        <>
+            <Header />
+            <div className='container'>ProfilePage</div>
+        </>
     )
 }
 

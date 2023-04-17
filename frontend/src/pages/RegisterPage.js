@@ -1,8 +1,14 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const RegisterPage = () => {
     return (
-        <div className='container'>RegisterPage</div>
+        <>
+            <Header />
+            <div className='container'>
+
+            </div>
+        </>
     )
 }
 

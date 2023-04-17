@@ -15,7 +15,6 @@ import UserDashboard from './pages/UserDashboard';
 function App() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />

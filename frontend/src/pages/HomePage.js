@@ -1,10 +1,14 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const HomePage = () => {
     return (
-        <div className='container'>
-            HomePage
-        </div>
+        <>
+            <Header />
+            <div className='container'>
+                HomePage
+            </div>
+        </>
     )
 }
 

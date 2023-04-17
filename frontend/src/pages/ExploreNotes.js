@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const ExploreNotes = () => {
     return (
-        <div className='container'>ExploreNotes</div>
+        <>
+            <Header />
+            <div className='container'>ExploreNotes</div>
+        </>
     )
 }
 

@@ -1,10 +1,14 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const AboutPage = () => {
     return (
-        <div className='container'>
-            AboutPage
-        </div>
+        <>
+            <Header />
+            <div className='container'>
+                AboutPage
+            </div>
+        </>
     )
 }
 

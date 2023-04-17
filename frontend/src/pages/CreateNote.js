@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const CreateNote = () => {
     return (
-        <div className='container'>CreateNote</div>
+        <>
+            <Header />
+            <div className='container'>CreateNote</div>
+        </>
     )
 }
 

@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const ContactPage = () => {
     return (
-        <div className='container'>ContactPage</div>
+        <>
+            <Header />
+            <div className='container'>ContactPage</div>
+        </>
     )
 }
 
