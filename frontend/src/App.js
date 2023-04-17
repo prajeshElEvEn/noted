@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
-import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import ProfilePage from './pages/ProfilePage';
@@ -11,6 +10,8 @@ import CreateNote from './pages/CreateNote';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import UserDashboard from './pages/UserDashboard';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/dashboard" element={<UserDashboard />} />
       </Routes>
+      <ToastContainer />
       <Footer />
     </>
   );
