@@ -168,7 +168,8 @@ const RegisterPage = () => {
                     </div>
                     <div className='form-field'>
                         <div className='label'>
-                            Already have an account? <span>
+                            Already have an account? &nbsp;
+                            <span>
                                 <Link to='/login'>Login</Link>
                             </span>
                         </div>
