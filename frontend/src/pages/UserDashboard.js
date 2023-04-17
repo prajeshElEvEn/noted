@@ -5,7 +5,11 @@ const UserDashboard = () => {
     return (
         <>
             <Header />
-            <div className='container'>UserDashboard</div>
+            <div
+                className='container'
+            >
+                UserDashboard
+            </div>
         </>
     )
 }
