@@ -4,9 +4,11 @@ import Header from '../components/Header'
 const RegisterPage = () => {
     return (
         <>
-            <Header />
+            <Header
+                choice='register'
+            />
             <div className='container'>
-
+                RegisterPage
             </div>
         </>
     )
