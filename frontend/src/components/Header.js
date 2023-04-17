@@ -31,7 +31,7 @@ const Header = ({ choice, user }) => {
                                     Know More
                                 </Link>
                                 {
-                                    user ? (
+                                    user.state === 'loggedIn' ? (
                                         <div className='nav-btn'>
                                             Logout
                                         </div>

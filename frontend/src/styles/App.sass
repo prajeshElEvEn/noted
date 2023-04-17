@@ -44,6 +44,7 @@
                 display: flex
                 align-items: center
                 gap: 0.5rem
+                cursor: pointer
 
 .footer-container
     width: 100%
@@ -102,6 +103,12 @@ form
                 font-size: 1rem
                 border: none
                 font-family: $font-family
+            textarea
+                width: 100%
+                outline: none
+                font-size: 1rem
+                border: none
+                font-family: $font-family
             img
                 cursor: pointer
         .input-btn
@@ -115,3 +122,28 @@ form
                 padding: 0.5rem 1rem
                 background: #000
                 font-family: $font-family
+
+.card-container
+    padding: 2rem 0
+    .cards-header
+        font-size: 2rem
+        font-weight: 600
+        border-left: 5px solid #000
+        padding-left: 1rem
+        margin-bottom: 1rem
+    .cards
+        display: flex
+        flex-wrap: wrap
+        gap: 1rem
+
+.card
+    width: 30%
+    border: 1px solid #dfdfdf
+    border-radius: 10px
+    padding: 1rem
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    .card-header
+        font-weight: 600
+

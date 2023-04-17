@@ -32,11 +32,8 @@ const LoginPage = () => {
             toast.success('Registration Successful!')
             console.log(formData)
             setFormData({
-                firstName: '',
-                lastName: '',
                 email: '',
                 password: '',
-                confirmPassword: ''
             })
             nav('/')
         }
