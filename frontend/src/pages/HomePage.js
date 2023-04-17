@@ -10,7 +10,13 @@ const HomePage = () => {
         email: 'john@gmail.com',
         state: 'loggedIn'
     })
-    const [cards, setCards] = useState([])
+    const [cards, setCards] = useState([
+        {
+            title: 'Note 1',
+            description: 'This is a note',
+            date: '2021-07-01'
+        }
+    ])
     const [formData, setFormData] = useState({
         title: '',
         content: '',
@@ -94,6 +100,8 @@ const HomePage = () => {
                                             <Card
                                                 title='Note 1'
                                                 description='This is a note'
+                                                date='2021-07-01'
+                                                choice='mine'
                                             />
                                         </div>
                                     ) : (

@@ -1,24 +1,67 @@
 import React from 'react'
+import Edit from '../assets/svg/edit.svg'
+import Delete from '../assets/svg/trash.svg'
 
 const Card = ({
     title,
     description,
+    date,
+    author,
+    choice
 }) => {
     return (
         <div className='card'>
             <div className='card-header'>
+                <div className='card-title'>
+                    {
+                        title
+                    }
+                </div>
                 {
-                    title
+                    choice === 'mine' && (
+                        <div className='btn-container'>
+                            <div className='btn'>
+                                <img src={Edit} alt='Edit' />
+                            </div>
+                            <div className='btn'>
+                                <img src={Delete} alt='Delete' />
+                            </div>
+                        </div>
+                    )
                 }
             </div>
             {
-                description ? (
+                description && (
                     <div className='card-body'>
                         {
                             description
                         }
                     </div>
-                ) : (null)
+                )
+            }
+            {
+                date && (
+                    <div>
+                        Last updated: &nbsp;
+                        <span>
+                            {
+                                date
+                            }
+                        </span>
+                    </div>
+                )
+            }
+            {
+                author && (
+                    <div>
+                        Author: &nbsp;
+                        <span>
+                            {
+                                author
+                            }
+                        </span>
+                    </div>
+                )
             }
         </div>
     )
