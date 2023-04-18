@@ -15,9 +15,6 @@ const Card = ({
     return (
         <div
             className='card'
-            onClick={() => {
-                nav('/edit')
-            }}
         >
             <div className='card-header'>
                 <div className='card-title'>
@@ -28,7 +25,12 @@ const Card = ({
                 {
                     choice === 'mine' && (
                         <div className='btn-container'>
-                            <div className='btn'>
+                            <div
+                                className='btn'
+                                onClick={() => {
+                                    nav('/edit')
+                                }}
+                            >
                                 <img src={Edit} alt='Edit' />
                             </div>
                             <div className='btn'>
