@@ -1,6 +1,7 @@
 import React from 'react'
 import Edit from '../assets/svg/edit.svg'
 import Delete from '../assets/svg/trash.svg'
+import { useNavigate } from 'react-router-dom'
 
 const Card = ({
     title,
@@ -9,8 +10,15 @@ const Card = ({
     author,
     choice
 }) => {
+
+    const nav = useNavigate()
     return (
-        <div className='card'>
+        <div
+            className='card'
+            onClick={() => {
+                nav('/edit')
+            }}
+        >
             <div className='card-header'>
                 <div className='card-title'>
                     {

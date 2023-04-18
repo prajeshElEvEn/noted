@@ -21,7 +21,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/explore" element={<ExploreNotes />} />
-        <Route path="/profile" element={<CreateNote />} />
+        <Route path="/edit" element={<CreateNote />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
